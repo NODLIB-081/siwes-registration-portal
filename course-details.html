@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Course Details</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <h1>Course Details</h1>
+
+        <div class="form-container">
+            <form action="confirmation.html">
+                <label for="programme">Programme</label>
+                <select id="programme" name="programme"required>
+                    <option value="">Select Programme</option>
+                    <option value="Cyber Security">Cyber Security</option>
+                    <option value="Biochemistry">Biochemistry</option>
+                    <option value="Agricultural Studies">Agricultural Studies</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Computer Science Education">Computer Science Education</option>
+                </select>
+
+                <br>
+                <label for="level">Level</label>
+                <select id="level" name="level"required>
+                    <option value="">Select Level</option>
+                    <option value="100">100 Level</option>
+                    <option value="200">200 Level</option>
+                    <option value="300">300 Level</option>
+                    <option value="400">400 Level</option>
+                    <option value="500">500 Level</option>
+                </select>
+
+                <br>
+                <label for="session">Academic Session</label>
+                <select id="session" name="session"required>
+                    <option value="">Select Academic Session</option>
+                    <option value="2015/2016">2020/2021</option>
+                    <option value="2021/2022">2021/2022</option>
+                    <option value="2022/2023">2022/2023</option>
+                    <option value="2023/2024">2023/2024</option>
+                    <option value="2024/2025">2024/2025</option>
+                    <option value="2025/2026">2025/2026</option>
+                    <option value="2026/2027">2026/2027</option>
+                    <option value="2027/2028">2027/2028</option>
+                    <option value="2028/2029">2028/2029</option>
+                </select>
+                
+                <hr style="margin: 20px 0; border: 0; border-top: 1px solid #cbd5e1;">
+
+                <h3 style="color: #1e293b; font-size: 16px; margin-bottom: 10px;">Select Course and Action</h3>
+
+                <!-- Course Row 1 --> 
+                <div class="course-row">
+                    <label for="course1">Course 1</label>
+                    <input type="text" id="course1" name="course1" placeholder="Enter Course code">
+                </div>
+
+                <!-- Course Row 2 --> 
+                <div class="course-row">
+                    <label for="course2">Course 2</label>
+                    <input type="text" id="course2" name="course2" placeholder="Enter Course code">
+                </div>
+                
+                <!-- Course Row 3 --> 
+                <div class="course-row">
+                    <label for="course2">Course 3</label>
+                    <input type="text" id="course3" name="course3" placeholder="Enter Course code">
+                </div>
+
+                <label style="margin-top: 15px;">Action for these courses:</label>
+                <div style="display: flex; gap: 20px; margin-bottom: 15px;">
+
+                    <div>
+                        <input type="radio" id="add" name="action" value="add" checked>
+                        <label for="add" style="display: inline; font-weight: normal;">ADD</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="drop" name="action" value="drop">
+                        <label for="drop" style="display: inline; font-weight: normal;">DROP</label>
+                    </div>
+
+                </div> 
+
+        </div>          
+
+                <button type="submit" class="btn" style="margin-top: 20px;">Continue</button>
+            </form>
+        
+
+    </body>
+</html>

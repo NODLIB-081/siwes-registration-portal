@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Registration</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <h1>Student Registration</h1>
+        <div class="form-container">
+            <form action="course-details.html">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+                <br>
+                <label for="studentid">Student ID:</label>
+                <input type="text" id="studentid" name="studentid"required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"required>
+                <br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone"required>
+                <br>
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob"required>
+                <br>
+                <label>Gender:</label>
+
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+
+                <br>
+                <label for="programme">Programme</label>
+                <select id="programme" name="programme">
+                    <option value="">Select Programme</option>
+                    <option value="Cyber Security">Cyber Security</option>
+                    <option value="Biochemistry">Biochemistry</option>
+                    <option value="Agricultural Studies">Agricultural Studies</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Computer Science Education">Computer Science Education</option>
+                </select>
+
+                <br>
+                <label for="level">Level</label>
+                <select id="level" name="level">
+                    <option value="">Select Level</option>
+                    <option value="100">100 Level</option>
+                    <option value="200">200 Level</option>
+                    <option value="300">300 Level</option>
+                    <option value="400">400 Level</option>
+                    <option value="500">500 Level</option>
+                </select>
+
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"required>
+
+                <br>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password"required>
+        
+        </div>
+
+                <br>
+                <button type="submit" class="btn">Continue</button>
+            </form>
+    </body>
+</html>
